@@ -1,6 +1,6 @@
 /** 
  * @author Dienst
- * @version 0.1 25.08.2021
+ * @version 0.1 01.09.2021
  */
 
 import sum.komponenten.*;
@@ -95,6 +95,9 @@ public class SuMAnwendung extends EBAnwendung
 
     public void hatKnopfMultGeklickt()
     {
+        hatBruch1 = new Bruch(hatTextfeldZaehler1.inhaltAlsGanzeZahl(),hatTextfeldNenner1.inhaltAlsGanzeZahl());
+        hatBruch2 = new Bruch(hatTextfeldZaehler2.inhaltAlsGanzeZahl(),hatTextfeldNenner2.inhaltAlsGanzeZahl());
+        
         
     }
 

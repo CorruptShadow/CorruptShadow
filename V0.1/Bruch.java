@@ -7,24 +7,38 @@
  */
 public class Bruch
 {
-    public int zaehler;
-    public int nenner;
-    public Bruch(int zaehler, int nenner)
+    public int zZaehler;
+    public int zNenner;
+    public Bruch(int pZaehler, int pNenner)
     {
-        this.zaehler = zaehler;
-        this.nenner = nenner;
+        this.zZaehler = pZaehler;
+        this.zNenner = pNenner;
         
         
     
     }
+    
+    //Methoden
+
+    public int zaehler()
+    {
+        return zZaehler;
+    }
+    
+    public int nenner()
+    {
+        return zNenner;
+    }
+    
     public double dezimalBruch()
     {
-        return (double)this.zaehler / (double)this.nenner;
+        return zZaehler/zNenner; /**return (double)this.zZaehler / (double)this.zNenner; */ 
     }
+    
     public int GGT()
     {
-        int b = this.nenner;
-        int a = this.zaehler;
+        int b = this.zNenner;
+        int a = this.zZaehler;
         if(a == 0) return b;
         while(b != 0)
         {
@@ -41,17 +55,17 @@ public class Bruch
     }
     public void erweitern(int erw)
     {
-        this.zaehler = this.zaehler * erw;
-        this.nenner = this.nenner * erw;
+        this.zZaehler = this.zZaehler * erw;
+        this.zNenner = this.zNenner * erw;
     }
     public void kuerzeDurch(int kue)
     {
-        this.zaehler = this.zaehler / kue;
-        this.nenner = this.nenner / kue;
+        this.zZaehler = this.zZaehler / kue;
+        this.zNenner = this.zNenner / kue;
     }
     public Bruch kuerzeVollstaendig()
     {
         int a = GGT();
-        return new Bruch(this.zaehler/a,this.nenner/a);
+        return new Bruch(this.zZaehler/a,this.zNenner/a);
     }
 }
