@@ -11,8 +11,20 @@ public class Bruchrechner
     // Konstruktor
     public Bruchrechner()
     {
+        
     }
 
     // Methoden
-
+    public Bruch Multiplieziere(Bruch pBruch1, Bruch pBruch2)
+    {
+        
+        Bruch zBruch = new Bruch(pBruch1.zaehler()*pBruch2.zaehler(),pBruch1.nenner()*pBruch2.nenner());
+        return zBruch;
+    }
+    public Bruch Dividiere(Bruch pBruch1, Bruch pBruch2)
+    {
+        
+        Bruch zBruch = new Bruch(pBruch1.zaehler()*pBruch2.nenner(),pBruch1.nenner()*pBruch2.zaehler());
+        return zBruch;
+    }
 }
