@@ -18,8 +18,8 @@ public class Bruchrechner
     public Bruch Multiplieziere(Bruch pBruch1, Bruch pBruch2)
     {
         
-        Bruch zBruch = new Bruch(pBruch1.zaehler()*pBruch2.zaehler(),pBruch1.nenner()*pBruch2.nenner());
-        return zBruch;
+        return new Bruch(pBruch1.zaehler()*pBruch2.zaehler(),pBruch1.nenner()*pBruch2.nenner());
+        
     }
     public Bruch Dividiere(Bruch pBruch1, Bruch pBruch2)
     {

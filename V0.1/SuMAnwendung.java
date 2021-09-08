@@ -98,12 +98,13 @@ public class SuMAnwendung extends EBAnwendung
         hatBruch1 = new Bruch(hatTextfeldZaehler1.inhaltAlsGanzeZahl(),hatTextfeldNenner1.inhaltAlsGanzeZahl());
         hatBruch2 = new Bruch(hatTextfeldZaehler2.inhaltAlsGanzeZahl(),hatTextfeldNenner2.inhaltAlsGanzeZahl());
         
-        
+        this.gibAusBruch( hatBruchrechner.Dividiere(hatBruch1,hatBruch2) );
     }
 
     public void hatKnopfDivGeklickt()
     {
-        
+        hatBruch1 = new Bruch(hatTextfeldZaehler1.inhaltAlsGanzeZahl(),hatTextfeldNenner1.inhaltAlsGanzeZahl());
+        hatBruch2 = new Bruch(hatTextfeldZaehler2.inhaltAlsGanzeZahl(),hatTextfeldNenner2.inhaltAlsGanzeZahl());
     }
 
     public void hatKnopfLoeschenGeklickt()
