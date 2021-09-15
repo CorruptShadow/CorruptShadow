@@ -34,8 +34,33 @@ public class Bruch
     {
         return zZaehler/zNenner; /**return (double)this.zZaehler / (double)this.zNenner; */ 
     }
+    public int GGT(int a, int b)
+    {
+        if (b==0) return a;
+        else
+        {
+            return GGT(b,a%b);
+        }
+    }
     
-    public int GGT()
+    public void erweitern(int erw)
+    {
+        this.zZaehler = this.zZaehler * erw;
+        this.zNenner = this.zNenner * erw;
+    }
+    public void kuerzeDurch(int kue)
+    {
+        this.zZaehler = this.zZaehler / kue;
+        this.zNenner = this.zNenner / kue;
+    }
+    public void kuerzeVollstaendig()
+    {
+        zZaehler = zZaehler/GGT(zZaehler,zNenner); //zZaehler wird überschrieben
+        zNenner = zNenner/GGT(zZaehler,zNenner);
+        //int a = GGT(this.zZaehler,this.zNenner);
+        //return new Bruch(this.zZaehler/a,this.zNenner/a);
+    }
+    /**public int GGT()
     {
         int b = this.zNenner;
         int a = this.zZaehler;
@@ -52,20 +77,5 @@ public class Bruch
             }
         }
         return a;
-    }
-    public void erweitern(int erw)
-    {
-        this.zZaehler = this.zZaehler * erw;
-        this.zNenner = this.zNenner * erw;
-    }
-    public void kuerzeDurch(int kue)
-    {
-        this.zZaehler = this.zZaehler / kue;
-        this.zNenner = this.zNenner / kue;
-    }
-    public Bruch kuerzeVollstaendig()
-    {
-        int a = GGT();
-        return new Bruch(this.zZaehler/a,this.zNenner/a);
-    }
+    } */
 }

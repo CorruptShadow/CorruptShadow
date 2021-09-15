@@ -114,6 +114,8 @@ public class SuMAnwendung extends EBAnwendung
     private void gibAusBruch(Bruch pBruch)
     {
         // hatErgZaehler.setzeInhalt(...);
-        
+        pBruch.kuerzeVollstaendig();
+        hatErgZaehler.setzeInhalt(pBruch.zaehler() );
+        hatErgNenner.setzeInhalt(pBruch.nenner() );
     }
 }
