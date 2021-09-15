@@ -9,6 +9,7 @@ public class Bruch
 {
     public int zZaehler;
     public int zNenner;
+    public int zPlatzhalter;
     public Bruch(int pZaehler, int pNenner)
     {
         this.zZaehler = pZaehler;
@@ -55,8 +56,9 @@ public class Bruch
     }
     public void kuerzeVollstaendig()
     {
+        zPlatzhalter = zZaehler;
         zZaehler = zZaehler/GGT(zZaehler,zNenner); //zZaehler wird überschrieben
-        zNenner = zNenner/GGT(zZaehler,zNenner);
+        zNenner = zNenner/GGT(zPlatzhalter,zNenner);
         //int a = GGT(this.zZaehler,this.zNenner);
         //return new Bruch(this.zZaehler/a,this.zNenner/a);
     }
