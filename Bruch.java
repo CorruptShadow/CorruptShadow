@@ -9,6 +9,7 @@ public class Bruch
 {
     public int zZaehler;
     public int zNenner;
+    public int zPlatzhalter;
     public Bruch(int pZaehler, int pNenner)
     {
         this.zZaehler = pZaehler;
@@ -34,15 +35,26 @@ public class Bruch
     {
         return zZaehler/zNenner; /**return (double)this.zZaehler / (double)this.zNenner; */ 
     }
-    public int GGT(int a, int b)
+    public int GGT_rekursiv(int a, int b)
     {
         if (b==0) return a;
         else
         {
-            return GGT(b,a%b);
+            return GGT_rekursiv(b,a%b);
         }
     }
     
+    private int GGT_iterativ(int a, int b)
+    {
+        int h;
+        while (b>0)
+        {
+            h = a;
+            a = b;
+            b = h%b;
+        }
+        return a;
+    }
     public void erweitern(int erw)
     {
         this.zZaehler = this.zZaehler * erw;
@@ -55,12 +67,13 @@ public class Bruch
     }
     public void kuerzeVollstaendig()
     {
-        zZaehler = zZaehler/GGT(zZaehler,zNenner);
-        zNenner = zNenner/GGT(zZaehler,zNenner);
-        //int a = GGT(this.zZaehler,this.zNenner);
+        zPlatzhalter = zZaehler;
+        zZaehler = zZaehler/GGT_rekursiv(zZaehler,zNenner); //zZaehler wird überschrieben
+        zNenner = zNenner/GGT_rekursiv(zPlatzhalter,zNenner);
+        //int a = GGT_rekursiv(this.zZaehler,this.zNenner);
         //return new Bruch(this.zZaehler/a,this.zNenner/a);
     }
-    /**public int GGT()
+    /**public int GGT_rekursiv()
     {
         int b = this.zNenner;
         int a = this.zZaehler;
