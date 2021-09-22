@@ -5,5 +5,4 @@ public class SuMProgramm
         SuMAnwendung hatSuMAnwendung = new SuMAnwendung();
         hatSuMAnwendung.fuehreAus();
     }
-
 }

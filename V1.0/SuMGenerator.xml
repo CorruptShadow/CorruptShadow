@@ -15,7 +15,7 @@
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
       <zLinks>269</zLinks>
-      <zOben>82</zOben>
+      <zOben>89</zOben>
       <zBreite>100</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>
@@ -32,8 +32,8 @@
       <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
-      <zLinks>270</zLinks>
-      <zOben>137</zOben>
+      <zLinks>269</zLinks>
+      <zOben>133</zOben>
       <zBreite>100</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>
@@ -50,8 +50,8 @@
       <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
-      <zLinks>431</zLinks>
-      <zOben>82</zOben>
+      <zLinks>433</zLinks>
+      <zOben>89</zOben>
       <zBreite>100</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>
@@ -68,35 +68,35 @@
       <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
-      <zLinks>432</zLinks>
-      <zOben>137</zOben>
+      <zLinks>433</zLinks>
+      <zOben>133</zOben>
       <zBreite>100</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>
     <sum.generator.KomponentenBeschreibung>
       <hatEreignisListe/>
       <zTyp>0</zTyp>
-      <zInhalt>---------------------------</zInhalt>
+      <zInhalt>-----------------------------</zInhalt>
       <zBezeichner>hatEtikett1</zBezeichner>
       <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
       <zLinks>260</zLinks>
-      <zOben>110</zOben>
-      <zBreite>120</zBreite>
-      <zHoehe>25</zHoehe>
+      <zOben>108</zOben>
+      <zBreite>124</zBreite>
+      <zHoehe>28</zHoehe>
     </sum.generator.KomponentenBeschreibung>
     <sum.generator.KomponentenBeschreibung>
       <hatEreignisListe/>
       <zTyp>0</zTyp>
-      <zInhalt>---------------------------</zInhalt>
+      <zInhalt>-----------------------------</zInhalt>
       <zBezeichner>hatEtikett2</zBezeichner>
       <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
-      <zLinks>424</zLinks>
-      <zOben>111</zOben>
-      <zBreite>120</zBreite>
+      <zLinks>421</zLinks>
+      <zOben>110</zOben>
+      <zBreite>125</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>
     <sum.generator.KomponentenBeschreibung>
@@ -206,7 +206,7 @@
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
       <zLinks>626</zLinks>
-      <zOben>82</zOben>
+      <zOben>89</zOben>
       <zBreite>100</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>
@@ -219,7 +219,7 @@
       <zAusrichtung>0</zAusrichtung>
       <zStandardEreignis>-1</zStandardEreignis>
       <zLinks>626</zLinks>
-      <zOben>136</zOben>
+      <zOben>133</zOben>
       <zBreite>100</zBreite>
       <zHoehe>25</zHoehe>
     </sum.generator.KomponentenBeschreibung>

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Bruchrechner
+comment0.text=\r\n\ Dienst\r\n\ V0.1\ 25.08.2021\r\n
+comment1.params=
+comment1.target=Bruchrechner()
+comment2.params=pBruch1\ pBruch2
+comment2.target=Bruch\ multiplieziere(Bruch,\ Bruch)
+comment3.params=pBruch1\ pBruch2
+comment3.target=Bruch\ dividiere(Bruch,\ Bruch)
+comment4.params=pBruch1\ pBruch2
+comment4.target=Bruch\ addieren(Bruch,\ Bruch)
+numComments=5
