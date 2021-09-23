@@ -20,7 +20,17 @@ public class Bruch
     }
     
     //Methoden
-
+    
+    public int kgV(int a, int b)
+    {
+        return a*b/GGT_rekursiv(a,b);
+    }
+    
+    public void erweitereMit(int c)
+    {
+        zZaehler = zZaehler*c;
+        zNenner = zNenner*c;
+    }
     public int zaehler()
     {
         return zZaehler;

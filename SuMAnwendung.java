@@ -85,12 +85,18 @@ public class SuMAnwendung extends EBAnwendung
 
     public void hatKnopfAddGeklickt()
     {
-        
+        hatBruch1 = new Bruch( hatTextfeldZaehler1.inhaltAlsGanzeZahl(), hatTextfeldNenner1.inhaltAlsGanzeZahl() );
+        hatBruch2 = new Bruch( hatTextfeldZaehler2.inhaltAlsGanzeZahl(), hatTextfeldNenner2.inhaltAlsGanzeZahl() );
+    
+        this.gibAusBruch( hatBruchrechner.addieren(hatBruch1,hatBruch2) );
     }
 
     public void hatKnopfSubtrGeklickt()
     {
-        
+        hatBruch1 = new Bruch( hatTextfeldZaehler1.inhaltAlsGanzeZahl(), hatTextfeldNenner1.inhaltAlsGanzeZahl() );
+        hatBruch2 = new Bruch( hatTextfeldZaehler2.inhaltAlsGanzeZahl(), hatTextfeldNenner2.inhaltAlsGanzeZahl() );
+    
+        this.gibAusBruch( hatBruchrechner.subtrahieren(hatBruch1,hatBruch2) );
     }
 
     public void hatKnopfMultGeklickt()

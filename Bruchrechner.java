@@ -25,14 +25,34 @@ public class Bruchrechner
     public Bruch dividiere(Bruch pBruch1, Bruch pBruch2)
     {
         
-        Bruch zBruch = new Bruch(pBruch1.zaehler()*pBruch2.nenner(),pBruch1.nenner()*pBruch2.zaehler());
-        zBruch.kuerzeVollstaendig();
-        return zBruch;
+        Bruch lBruch = new Bruch(pBruch1.zaehler()*pBruch2.nenner(),pBruch1.nenner()*pBruch2.zaehler());
+        lBruch.kuerzeVollstaendig();
+        return lBruch;
     }
     public Bruch addieren(Bruch pBruch1, Bruch pBruch2)
     {
-        Bruch pBruch = new Bruch(pBruch1.zaehler()*pBruch2.nenner(),pBruch1.nenner()*pBruch2.zaehler());
-        pBruch.kuerzeVollstaendig();
-        return pBruch;
+        
+        int kgV = pBruch1.kgV(pBruch1.nenner(),pBruch2.nenner());
+        pBruch1.erweitereMit(kgV/pBruch1.nenner());
+        pBruch2.erweitereMit(kgV/pBruch2.nenner());
+        Bruch lBruch = new Bruch(pBruch1.zaehler()+pBruch2.zaehler(),pBruch1.nenner());
+        
+        
+        /**Bruch lBruch = new Bruch(pBruch1.kgV(pBruch1.nenner(), pBruch2.nenner())/pBruch1.nenner()*pBruch1.zaehler()
+        +pBruch1.kgV(pBruch1.nenner(), pBruch2.nenner())/pBruch2.nenner()*pBruch2.zaehler(),
+        pBruch1.kgV(pBruch1.nenner(), pBruch2.nenner())/pBruch1.nenner()*pBruch1.nenner());
+        lBruch.kuerzeVollstaendig();
+        return lBruch;*/
+        lBruch.kuerzeVollstaendig();
+        return lBruch;
+    }
+    public Bruch subtrahieren(Bruch pBruch1, Bruch pBruch2)
+    {
+        int kgV = pBruch1.kgV(pBruch1.nenner(),pBruch2.nenner());
+        pBruch1.erweitereMit(kgV/pBruch1.nenner());
+        pBruch2.erweitereMit(kgV/pBruch2.nenner());
+        Bruch lBruch = new Bruch(pBruch1.zaehler()-pBruch2.zaehler(),pBruch1.nenner());
+        lBruch.kuerzeVollstaendig();
+        return lBruch;
     }
 }

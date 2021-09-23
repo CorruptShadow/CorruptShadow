@@ -9,4 +9,6 @@ comment3.params=pBruch1\ pBruch2
 comment3.target=Bruch\ dividiere(Bruch,\ Bruch)
 comment4.params=pBruch1\ pBruch2
 comment4.target=Bruch\ addieren(Bruch,\ Bruch)
-numComments=5
+comment5.params=pBruch1\ pBruch2
+comment5.target=Bruch\ subtrahieren(Bruch,\ Bruch)
+numComments=6
