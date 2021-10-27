@@ -6,8 +6,8 @@ public class SuMApplet extends Applet
 {
     public SuMApplet()
     {
-        SuMAnwendung hatSuMAnwendung = new SuMAnwendung();
-        hatSuMAnwendung.fuehreAus();
+        PraxisAnwendung hatPraxisAnwendung = new PraxisAnwendung();
+        hatPraxisAnwendung.fuehreAus();
     }
 
 }

@@ -2,7 +2,8 @@ public class SuMProgramm
 {
     public static void main(String args[])
     {
-        SuMAnwendung hatSuMAnwendung = new SuMAnwendung();
-        hatSuMAnwendung.fuehreAus();
+        PraxisAnwendung hatPraxisAnwendung = new PraxisAnwendung();
+        hatPraxisAnwendung.fuehreAus();
     }
+
 }
