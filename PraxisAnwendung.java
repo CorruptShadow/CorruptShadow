@@ -42,8 +42,8 @@ public class PraxisAnwendung extends EBAnwendung
         hatEtikettName = new Etikett(70, 80, 100, 25, "Name");
         hatEtikettName.setzeAusrichtung(Ausrichtung.RECHTS);
 
-        hatTextfName = new Textfeld(180, 80, 150, 25, "");
-        hatTextfName.setzeAusrichtung(Ausrichtung.LINKS);
+        hatTextName = new Textfeld(180, 80, 150, 25, "");
+        hatTextName.setzeAusrichtung(Ausrichtung.LINKS);
 
         hatKnopfAnmelden = new Knopf(330, 80, 100, 25, "Anmelden");
         hatKnopfAnmelden.setzeBearbeiterGeklickt("hatKnopfAnmeldenGeklickt");
@@ -65,8 +65,11 @@ public class PraxisAnwendung extends EBAnwendung
     {
         if ( hatTextName.inhaltAlsText() != "")
         {
-            // ...
-            hatZeilenbereich.setzeInhalt(  );
+            Patient lPatient;
+            lPatient = new Patient(hatTextfName.inhaltAlsText());
+            hatWarteraum.setzePatient(lPatient);
+            this.zeigeNaechsterPatient();
+            hatZeilenbereich.setzeInhalt(hatWarteraum.toString());
         }
     }
 
@@ -77,6 +80,8 @@ public class PraxisAnwendung extends EBAnwendung
 
     private void zeigeNaechsterPatient()
     {
-        // ...
+        if(!hatWarteraum.leer())
+        hatEtikNameNaePat.setzeInhalt(hatWarteraum.ersterPatient().name());
+        else hatEtikNameNaePat.setzeInhalt("-----");
     }
 }
