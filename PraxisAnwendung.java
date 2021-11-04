@@ -39,6 +39,15 @@ public class PraxisAnwendung extends EBAnwendung
         hatWarteraum = new Warteraum();
         hatErsterPatient = null;
 
+        
+        hatEtikettName = new Etikett(530, 80, 50, 50, "Stuhl1");
+        hatEtikettName = new Etikett(590, 80, 50, 50, "Stuhl2");
+        hatEtikettName = new Etikett(650, 80, 50, 50, "Stuhl3");
+        hatEtikettName = new Etikett(710, 140, 50, 50, "Stuhl4");
+        hatEtikettName = new Etikett(710, 200, 50, 50, "Stuhl5");
+        hatEtikettName = new Etikett(710, 260, 50, 50, "Stuhl6");
+        hatEtikettName = new Etikett(710, 320, 50, 50, "Stuhl7");
+        
         hatEtikettName = new Etikett(70, 80, 100, 25, "Name");
         hatEtikettName.setzeAusrichtung(Ausrichtung.RECHTS);
 
@@ -66,7 +75,7 @@ public class PraxisAnwendung extends EBAnwendung
         if ( hatTextName.inhaltAlsText() != "")
         {
             Patient lPatient;
-            lPatient = new Patient(hatTextfName.inhaltAlsText());
+            lPatient = new Patient(hatTextName.inhaltAlsText());
             hatWarteraum.setzePatient(lPatient);
             this.zeigeNaechsterPatient();
             hatZeilenbereich.setzeInhalt(hatWarteraum.toString());

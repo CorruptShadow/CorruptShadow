@@ -18,7 +18,15 @@ public class Warteraum
     // Methoden
     public void setzePatient(Patient pPatient)
     {
-        // ...
+        Patient lPatient;
+        
+        if( this.leer() ) kenntErsterPatient = pPatient;
+            else
+            {
+                lPatient = kenntErsterPatient;
+                while(lPatient.nachfolger() != null) lPatient = lPatient.nachfolger();
+                lPatient.setzeNachfolger(pPatient);
+            }
     }
     
     public Patient ersterPatient()
