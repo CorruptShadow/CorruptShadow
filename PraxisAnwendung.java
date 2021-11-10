@@ -84,7 +84,7 @@ public class PraxisAnwendung extends EBAnwendung
 
     public void hatKnopfAufrufenGeklickt()
     {
-        // ...
+        
     }
 
     private void zeigeNaechsterPatient()

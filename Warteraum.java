@@ -36,7 +36,7 @@ public class Warteraum
 
     public void entfernePatient()
     {
-        // ...
+        kenntErsterPatient = kenntErsterPatient.nachfolger();
     }
     
     public boolean leer() 
