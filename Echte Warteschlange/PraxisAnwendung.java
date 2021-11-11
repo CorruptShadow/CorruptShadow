@@ -28,6 +28,20 @@ public class PraxisAnwendung extends EBAnwendung
     private Knopf hatKnopfAufrufen;
 
     private Zeilenbereich hatZeilenbereich;
+    
+    
+    private Etikett hatEtikettName0;
+    private Etikett hatEtikettName1;
+    private Etikett hatEtikettName2;
+    private Etikett hatEtikettName3;
+    private Etikett hatEtikettName4;
+    private Etikett hatEtikettName5;
+    private Etikett hatEtikettName6;
+    private Etikett hatEtikettName7;
+    private Etikett hatEtikettName8;
+    private Etikett hatEtikettName9;
+    
+    
 
     // Konstruktor
     public PraxisAnwendung()
@@ -40,13 +54,18 @@ public class PraxisAnwendung extends EBAnwendung
         hatErsterPatient = null;
 
         
-        hatEtikettName = new Etikett(530, 80, 50, 50, "Stuhl1");
-        hatEtikettName = new Etikett(590, 80, 50, 50, "Stuhl2");
-        hatEtikettName = new Etikett(650, 80, 50, 50, "Stuhl3");
-        hatEtikettName = new Etikett(710, 140, 50, 50, "Stuhl4");
-        hatEtikettName = new Etikett(710, 200, 50, 50, "Stuhl5");
-        hatEtikettName = new Etikett(710, 260, 50, 50, "Stuhl6");
-        hatEtikettName = new Etikett(710, 320, 50, 50, "Stuhl7");
+        hatEtikettName0 = new Etikett(530, 80, 50, 50, "Stuhl0");
+        hatEtikettName1 = new Etikett(590, 80, 50, 50, "Stuhl1");
+        hatEtikettName2 = new Etikett(650, 80, 50, 50, "Stuhl2");
+        hatEtikettName3 = new Etikett(710, 140, 50, 50, "Stuhl3");
+        hatEtikettName4 = new Etikett(710, 200, 50, 50, "Stuhl4");
+        hatEtikettName5 = new Etikett(710, 260, 50, 50, "Stuhl5");
+        hatEtikettName6 = new Etikett(710, 320, 50, 50, "Stuhl6");
+        hatEtikettName7 = new Etikett(530, 380, 50, 50, "Stuhl7");
+        hatEtikettName8 = new Etikett(590, 380, 50, 50, "Stuhl8");
+        hatEtikettName9 = new Etikett(650, 380, 50, 50, "Stuhl9");
+        
+        
         
         hatEtikettName = new Etikett(70, 80, 100, 25, "Name");
         hatEtikettName.setzeAusrichtung(Ausrichtung.RECHTS);
@@ -79,12 +98,18 @@ public class PraxisAnwendung extends EBAnwendung
             hatWarteraum.setzePatient(lPatient);
             this.zeigeNaechsterPatient();
             hatZeilenbereich.setzeInhalt(hatWarteraum.toString());
+            hatTextName.setzeInhalt("");
         }
     }
 
     public void hatKnopfAufrufenGeklickt()
     {
-        
+        if(!hatWarteraum.leer())
+        { 
+            hatWarteraum.entfernePatient();
+            this.zeigeNaechsterPatient();
+            hatZeilenbereich.setzeInhalt(hatWarteraum.toString());
+        }
     }
 
     private void zeigeNaechsterPatient()
