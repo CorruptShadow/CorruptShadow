@@ -139,7 +139,23 @@ public class PraxisAnwendung extends EBAnwendung
             this.zeigeNaechsterPatient();
             hatZeilenbereich.setzeInhalt(hatWarteraum.toString());
             hatTextName.setzeInhalt("");
-            int lPlatz = hatRechner.ganzeZufallszahl(0,9);
+            int lPlatz = hatRechner.ganzeZufallszahl(0,10);
+            switch(lPlatz)
+            {
+                case 0: hatEtikettPlatz0.setzeInhalt(lPatient.name()); break;
+                case 1: hatEtikettPlatz1.setzeInhalt(lPatient.name()); break;
+                case 2: hatEtikettPlatz2.setzeInhalt(lPatient.name()); break;
+                case 3: hatEtikettPlatz3.setzeInhalt(lPatient.name()); break;
+                case 4: hatEtikettPlatz4.setzeInhalt(lPatient.name()); break;
+                case 5: hatEtikettPlatz5.setzeInhalt(lPatient.name()); break;
+                case 6: hatEtikettPlatz6.setzeInhalt(lPatient.name()); break;
+                case 7: hatEtikettPlatz7.setzeInhalt(lPatient.name()); break;
+                case 8: hatEtikettPlatz8.setzeInhalt(lPatient.name()); break;
+                case 9: hatEtikettPlatz9.setzeInhalt(lPatient.name()); break;
+                default: hatEtikettPlatz7.setzeInhalt(lPatient.name()); break;
+                
+            }
+            /**
             if(lPlatz==0) hatEtikettPlatz0.setzeInhalt(lPatient.name());
             if(lPlatz==1) hatEtikettPlatz1.setzeInhalt(lPatient.name());
             if(lPlatz==2) hatEtikettPlatz2.setzeInhalt(lPatient.name());
@@ -150,6 +166,7 @@ public class PraxisAnwendung extends EBAnwendung
             if(lPlatz==7) hatEtikettPlatz7.setzeInhalt(lPatient.name());
             if(lPlatz==8) hatEtikettPlatz8.setzeInhalt(lPatient.name());
             if(lPlatz==9) hatEtikettPlatz9.setzeInhalt(lPatient.name());
+            
             /*for(int n = 0; n<10; n++)
             {
                 hatEtikettName0.setzeInhalt();
