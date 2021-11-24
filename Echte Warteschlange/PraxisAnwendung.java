@@ -28,22 +28,10 @@ public class PraxisAnwendung extends EBAnwendung
     private Knopf hatKnopfAufrufen;
 
     private Zeilenbereich hatZeilenbereich;
-    
-    
-    private Etikett hatEtikettPlatz0;
-    private Etikett hatEtikettPlatz1;
-    private Etikett hatEtikettPlatz2;
-    private Etikett hatEtikettPlatz3;
-    private Etikett hatEtikettPlatz4;
-    private Etikett hatEtikettPlatz5;
-    private Etikett hatEtikettPlatz6;
-    private Etikett hatEtikettPlatz7;
-    private Etikett hatEtikettPlatz8;
-    private Etikett hatEtikettPlatz9;
-    
+   
     private Rechner hatRechner;
     
-    
+    private Etikett[] hatEtikettPlatz;
 
     // Konstruktor
     public PraxisAnwendung()
@@ -58,53 +46,53 @@ public class PraxisAnwendung extends EBAnwendung
 
         hatStift.bewegeBis(530,80);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz0 = new Etikett(531, 81, 49, 49, "Stuhl0");
-        hatEtikettPlatz0.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[0] = new Etikett(531, 81, 49, 49, "Stuhl0");
+        hatEtikettPlatz[0].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(590,80);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz1 = new Etikett(591, 81, 49, 49, "Stuhl1");
-        hatEtikettPlatz1.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[1]= new Etikett(591, 81, 49, 49, "Stuhl1");
+        hatEtikettPlatz[1].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(650,80);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz2 = new Etikett(651, 81, 49, 49, "Stuhl2");
-        hatEtikettPlatz2.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[2] = new Etikett(651, 81, 49, 49, "Stuhl2");
+        hatEtikettPlatz[2].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(710,140);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz3 = new Etikett(711, 141, 49, 49, "Stuhl3");
-        hatEtikettPlatz3.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[3] = new Etikett(711, 141, 49, 49, "Stuhl3");
+        hatEtikettPlatz[3].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(710,200);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz4 = new Etikett(711, 201, 49, 49, "Stuhl4");
-        hatEtikettPlatz4.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[4] = new Etikett(711, 201, 49, 49, "Stuhl4");
+        hatEtikettPlatz[4].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(710,260);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz5 = new Etikett(711, 261, 49, 49, "Stuhl5");
-        hatEtikettPlatz5.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[5] = new Etikett(711, 261, 49, 49, "Stuhl5");
+        hatEtikettPlatz[5].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(710,320);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz6 = new Etikett(711, 321, 49, 49, "Stuhl6");
-        hatEtikettPlatz6.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[6] = new Etikett(711, 321, 49, 49, "Stuhl6");
+        hatEtikettPlatz[6].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(530,380);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz7 = new Etikett(531, 381, 49, 49, "Stuhl7");
-        hatEtikettPlatz7.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[7] = new Etikett(531, 381, 49, 49, "Stuhl7");
+        hatEtikettPlatz[7].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(590,380);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz8 = new Etikett(591, 381, 49, 49, "Stuhl8");
-        hatEtikettPlatz8.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[8] = new Etikett(591, 381, 49, 49, "Stuhl8");
+        hatEtikettPlatz[8].setzeAusrichtung(Ausrichtung.MITTE);
         
         hatStift.bewegeBis(650,380);
         hatStift.zeichneRechteck(50,50);
-        hatEtikettPlatz9 = new Etikett(651, 381, 49, 49, "Stuhl9");
-        hatEtikettPlatz9.setzeAusrichtung(Ausrichtung.MITTE);
+        hatEtikettPlatz[9] = new Etikett(651, 381, 49, 49, "Stuhl9");
+        hatEtikettPlatz[9].setzeAusrichtung(Ausrichtung.MITTE);
         
         
         hatEtikettName = new Etikett(70, 80, 100, 25, "Name");
@@ -139,38 +127,8 @@ public class PraxisAnwendung extends EBAnwendung
             this.zeigeNaechsterPatient();
             hatZeilenbereich.setzeInhalt(hatWarteraum.toString());
             hatTextName.setzeInhalt("");
-            int lPlatz = hatRechner.ganzeZufallszahl(0,10);
-            switch(lPlatz)
-            {
-                case 0: hatEtikettPlatz0.setzeInhalt(lPatient.name()); break;
-                case 1: hatEtikettPlatz1.setzeInhalt(lPatient.name()); break;
-                case 2: hatEtikettPlatz2.setzeInhalt(lPatient.name()); break;
-                case 3: hatEtikettPlatz3.setzeInhalt(lPatient.name()); break;
-                case 4: hatEtikettPlatz4.setzeInhalt(lPatient.name()); break;
-                case 5: hatEtikettPlatz5.setzeInhalt(lPatient.name()); break;
-                case 6: hatEtikettPlatz6.setzeInhalt(lPatient.name()); break;
-                case 7: hatEtikettPlatz7.setzeInhalt(lPatient.name()); break;
-                case 8: hatEtikettPlatz8.setzeInhalt(lPatient.name()); break;
-                case 9: hatEtikettPlatz9.setzeInhalt(lPatient.name()); break;
-                default: hatEtikettPlatz7.setzeInhalt(lPatient.name()); break;
-                
-            }
-            /**
-            if(lPlatz==0) hatEtikettPlatz0.setzeInhalt(lPatient.name());
-            if(lPlatz==1) hatEtikettPlatz1.setzeInhalt(lPatient.name());
-            if(lPlatz==2) hatEtikettPlatz2.setzeInhalt(lPatient.name());
-            if(lPlatz==3) hatEtikettPlatz3.setzeInhalt(lPatient.name());
-            if(lPlatz==4) hatEtikettPlatz4.setzeInhalt(lPatient.name());
-            if(lPlatz==5) hatEtikettPlatz5.setzeInhalt(lPatient.name());
-            if(lPlatz==6) hatEtikettPlatz6.setzeInhalt(lPatient.name());
-            if(lPlatz==7) hatEtikettPlatz7.setzeInhalt(lPatient.name());
-            if(lPlatz==8) hatEtikettPlatz8.setzeInhalt(lPatient.name());
-            if(lPlatz==9) hatEtikettPlatz9.setzeInhalt(lPatient.name());
-            
-            /*for(int n = 0; n<10; n++)
-            {
-                hatEtikettName0.setzeInhalt();
-            }*/
+            int lPlatz = hatRechner.ganzeZufallszahl(0,9);
+            hatEtikettPlatz[lPlatz].setzeInhalt(lPatient.name());
         }
     }
 
