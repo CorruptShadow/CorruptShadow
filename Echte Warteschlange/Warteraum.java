@@ -8,11 +8,12 @@ public class Warteraum
 {
     // Referenzen
     Patient kenntErsterPatient;
-
+    public int zAnzahl;
     // Konstruktor
     public Warteraum()
     {
         kenntErsterPatient = null;
+        zAnzahl = 0;
     }
 
     // Methoden
@@ -27,6 +28,7 @@ public class Warteraum
                 while(lPatient.nachfolger() != null) lPatient = lPatient.nachfolger();
                 lPatient.setzeNachfolger(pPatient);
             }
+        zAnzahl++;
     }
     
     public Patient ersterPatient()
@@ -37,6 +39,7 @@ public class Warteraum
     public void entfernePatient()
     {
         kenntErsterPatient = kenntErsterPatient.nachfolger();
+        zAnzahl--;
     }
     
     public boolean leer() 

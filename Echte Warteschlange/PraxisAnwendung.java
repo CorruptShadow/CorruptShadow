@@ -120,7 +120,7 @@ public class PraxisAnwendung extends EBAnwendung
     // Methoden
     public void hatKnopfAnmeldenGeklickt()
     {
-        if ( hatTextName.inhaltAlsText() != "")
+        if ( hatTextName.inhaltAlsText() != "" && hatWarteraum.zAnzahl < hatEtikettPlatz.length)
         {
             int lPlatz;
             do
