@@ -129,7 +129,7 @@ public class PraxisAnwendung extends EBAnwendung
             }while(hatEtikettPlatz[lPlatz].inhaltAlsText() != "");
 
             Patient lPatient;
-            lPatient = new Patient(hatTextName.inhaltAlsText());
+            lPatient = new Patient(hatTextName.inhaltAlsText(),lPlatz);
             hatEtikettPlatz[lPlatz].setzeInhalt(lPatient.name());
             hatWarteraum.setzePatient(lPatient);
             this.zeigeNaechsterPatient();
@@ -142,6 +142,7 @@ public class PraxisAnwendung extends EBAnwendung
     {
         if(!hatWarteraum.leer())
         { 
+            hatEtikettPlatz[hatWarteraum.ersterPatient().platz()].setzeInhalt("");
             hatWarteraum.entfernePatient();
             this.zeigeNaechsterPatient();
             hatZeilenbereich.setzeInhalt(hatWarteraum.toString());

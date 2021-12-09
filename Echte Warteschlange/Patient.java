@@ -12,11 +12,13 @@ public class Patient
 
     // Attribute
     String zName;
-
+    int zPlatz;
+    
     // Konstruktor
-    public Patient(String pName)
+    public Patient(String pName, int pPlatz)
     {
         zName = pName;
+        zPlatz = pPlatz;
         kenntNachfolger = null;
     }
 
@@ -34,5 +36,10 @@ public class Patient
     public String name()
     {
         return zName;
+    }
+    
+    public int platz()
+    {
+        return zPlatz;
     }
 }
