@@ -19,7 +19,9 @@ public class Warteraum
     // Methoden
     public void setzePatient(Patient pPatient)
     {
-        Patient lPatient;
+        if(kenntErsterPatient != null) pPatient.setzeNachfolger(kenntErsterPatient);
+        kenntErsterPatient = pPatient;
+        /*Patient lPatient;
         
         if( this.leer() ) kenntErsterPatient = pPatient;
             else
@@ -27,7 +29,7 @@ public class Warteraum
                 lPatient = kenntErsterPatient;
                 while(lPatient.nachfolger() != null) lPatient = lPatient.nachfolger();
                 lPatient.setzeNachfolger(pPatient);
-            }
+            }*/
         zAnzahl++;
     }
     
