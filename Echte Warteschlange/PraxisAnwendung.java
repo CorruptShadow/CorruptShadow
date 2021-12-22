@@ -26,6 +26,7 @@ public class PraxisAnwendung extends EBAnwendung
     private Knopf hatKnopfAnmelden;
     private Etikett hatEtikNameNaePat;
     private Knopf hatKnopfAufrufen;
+    private Knopf hatKnopfTestdaten;
 
     private Zeilenbereich hatZeilenbereich;
    
@@ -113,6 +114,9 @@ public class PraxisAnwendung extends EBAnwendung
 
         hatKnopfAufrufen = new Knopf(330, 150, 100, 25, "Aufrufen");
         hatKnopfAufrufen.setzeBearbeiterGeklickt("hatKnopfAufrufenGeklickt");
+        
+        hatKnopfAufrufen = new Knopf(360, 180, 10, 25, "Testdaten");
+        hatKnopfAufrufen.setzeBearbeiterGeklickt("hatKnopfTestdatenGecklickt");
 
         hatZeilenbereich = new Zeilenbereich(230, 250, 200, 200, "");
     }
@@ -148,7 +152,13 @@ public class PraxisAnwendung extends EBAnwendung
             hatZeilenbereich.setzeInhalt(hatWarteraum.toString());
         }
     }
-
+    
+    public void hatKnopfTestdatenGekilckt()
+    {
+        String[] lDaten = {"Omidullah","Alina","Tom","Max"};
+        for(int i=0; i<lDaten.length; i++)
+            hatWarteraum.setzePatient(new Patient(lDaten[i],0));
+    }
     private void zeigeNaechsterPatient()
     {
         if(!hatWarteraum.leer())
