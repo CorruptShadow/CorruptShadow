@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Scheibe
+comment1.params=pNummer
+comment1.target=Scheibe(int)
+comment2.params=pHPos\ pVPos
+comment2.target=void\ zeichne(int,\ int)
+comment3.params=
+comment3.target=void\ loesche()
+comment4.params=pScheibe
+comment4.target=void\ setzeDarunter(Scheibe)
+comment5.params=
+comment5.target=Scheibe\ darunter()
+comment6.params=
+comment6.target=int\ nummer()
+numComments=7

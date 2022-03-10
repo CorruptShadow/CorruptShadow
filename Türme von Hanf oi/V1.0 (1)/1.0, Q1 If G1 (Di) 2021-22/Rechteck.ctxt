@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Rechteck
+comment1.params=pHPos
+comment1.target=Rechteck(int)
+comment2.params=
+comment2.target=void\ zeichne()
+comment3.params=pHMauspos\ pVMauspos
+comment3.target=boolean\ getroffen(int,\ int)
+numComments=4

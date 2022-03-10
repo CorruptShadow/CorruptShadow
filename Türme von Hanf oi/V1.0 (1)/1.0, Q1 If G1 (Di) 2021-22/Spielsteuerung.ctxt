@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Spielsteuerung
+comment1.params=
+comment1.target=Spielsteuerung()
+comment10.params=pHPos\ pVPos
+comment10.target=void\ bearbeiteDoppelKlick(int,\ int)
+comment2.params=
+comment2.target=void\ initialisiere()
+comment3.params=
+comment3.target=void\ starteSpiel()
+comment4.params=
+comment4.target=void\ starteAnimation()
+comment5.params=
+comment5.target=void\ setzeZurueck()
+comment6.params=
+comment6.target=boolean\ erstelleTurm()
+comment7.params=pAnzahl\ pVon\ pUeber\ pNach
+comment7.target=void\ bewegeTurm(int,\ int,\ int,\ int)
+comment8.params=pVon\ pNach
+comment8.target=void\ verschiebe(int,\ int)
+comment9.params=pHPos\ pVPos
+comment9.target=void\ bearbeiteMausDruck(int,\ int)
+numComments=11
